@@ -93,11 +93,26 @@
         </div>
 
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
+          <li><a href="#habilidades" data-i18n="nav-skills">Habilidades</a></li>
+          <li><a href="#projetos" data-i18n="nav-projects">Projetos</a></li>
+          <li><a href="#contato" data-i18n="nav-contact">Contato</a></li>
+          <li class="nav-lang-item">
+            <div class="lang-switcher lang-switcher-nav">
+              <div class="lang-slider"></div>
+              <button class="lang-option" data-lang="pt-BR">PT</button>
+              <button class="lang-option" data-lang="en-US">US</button>
+              <button class="lang-option" data-lang="he-IL">HE</button>
+            </div>
+          </li>
         </ul>
+        <!-- Seletor de idioma para desktop -->
+        <div class="lang-switcher lang-switcher-desktop">
+          <div class="lang-slider"></div>
+          <button class="lang-option" data-lang="pt-BR">PT</button>
+          <button class="lang-option" data-lang="en-US">US</button>
+          <button class="lang-option" data-lang="he-IL">HE</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -105,23 +120,26 @@
   <main>
     <section id="hero" class="hero">
       <div class="container">
-        <h1>Renan Fumis</h1>
-        <h2>Desenvolvedor Web Full Stack</h2>
-        <p class="hero-description">Transformando ideias em código, criando soluções inovadoras para web</p>
+        <h1 data-i18n="hero-title">Renan Fumis</h1>
+        <h2 data-i18n="hero-subtitle">Desenvolvedor Web Full Stack</h2>
+        <p class="hero-description" data-i18n="hero-description">Transformando ideias em código, criando soluções
+          inovadoras para web</p>
       </div>
     </section>
 
     <section id="sobre" class="sobre">
       <div class="container">
-        <h2>Sobre Mim</h2>
+        <h2 data-i18n="about-title">Sobre Mim</h2>
         <div class="sobre-content">
           <div class="sobre-texto">
-            <p>Sou Renan Fumis, Desenvolvedor Web Full Stack com maior ênfase e domínio em tecnologias de Frontend.
-              Minha
-              formação inicial é em Publicidade e Propaganda, o que contribuiu para minha visão estética e atenção à
+            <p data-i18n="about-p1">Sou Renan Fumis, Desenvolvedor Web Full Stack com maior ênfase e domínio em
+              tecnologias de Frontend.
+              Minha formação inicial é em Publicidade e Propaganda, o que contribuiu para minha visão estética e atenção
+              à
               experiência do usuário — mas foi no contato com equipes de desenvolvimento em empresas de tecnologia que
               descobri minha real vocação: programar.</p>
-            <p>Sou pós-graduado em Desenvolvimento Full Stack pela PUC-Minas e venho trabalhando com HTML, CSS
+            <p data-i18n="about-p2">Sou pós-graduado em Desenvolvimento Full Stack pela PUC-Minas e venho trabalhando
+              com HTML, CSS
               (Grid/Flex), JavaScript e React, criando interfaces modernas, acessíveis e responsivas. No backend, atuo
               com Python (Django) e Node.js (Express), desenvolvendo APIs RESTful, integrações com serviços externos e
               soluções completas para web.</p>
@@ -132,23 +150,23 @@
 
     <section id="habilidades" class="habilidades">
       <div class="container">
-        <h2>Habilidades</h2>
+        <h2 data-i18n="skills-title">Habilidades</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React, Vue.js</p>
+            <h3 data-i18n="skills-frontend-title">Frontend</h3>
+            <p data-i18n="skills-frontend-desc">HTML, CSS, JavaScript, React, Vue.js</p>
           </div>
           <div class="skill-card">
-            <h3>Backend</h3>
-            <p>Node.js, Python, PHP</p>
+            <h3 data-i18n="skills-backend-title">Backend</h3>
+            <p data-i18n="skills-backend-desc">Node.js, Python, PHP</p>
           </div>
           <div class="skill-card">
-            <h3>Banco de Dados</h3>
-            <p>MySQL, MongoDB, PostgreSQL</p>
+            <h3 data-i18n="skills-db-title">Banco de Dados</h3>
+            <p data-i18n="skills-db-desc">MySQL, MongoDB, PostgreSQL</p>
           </div>
           <div class="skill-card">
-            <h3>Ferramentas</h3>
-            <p>Git, Docker, AWS, Cursor, VSCode</p>
+            <h3 data-i18n="skills-tools-title">Ferramentas</h3>
+            <p data-i18n="skills-tools-desc">Git, Docker, AWS, Cursor, VSCode</p>
           </div>
         </div>
       </div>
@@ -156,12 +174,13 @@
 
     <section id="projetos" class="projetos">
       <div class="container">
-        <h2>Alguns Projetos</h2>
+        <h2 data-i18n="projects-title">Alguns Projetos</h2>
         <div class="projetos-grid">
 
           <div class="projeto-card">
-            <h3>Conversor de Arquivos</h3>
-            <p>Software desktop que converte arquivos em PDF e TIFF com interface gráfica feita em Flet Python.</p>
+            <h3 data-i18n="project1-title">Conversor de Arquivos</h3>
+            <p data-i18n="project1-desc">Software desktop que converte arquivos em PDF e TIFF com interface gráfica
+              feita em Flet Python.</p>
             <div class="tech-tags">
               <span>Python</span>
               <span>Flet</span>
@@ -171,9 +190,9 @@
           </div>
 
           <div class="projeto-card">
-            <h3>PrimeRodas</h3>
-            <p>Site sobre carros esportivos de luxo com sistema de busca, cadastro de usuários e painel administrativo.
-            </p>
+            <h3 data-i18n="project2-title">PrimeRodas</h3>
+            <p data-i18n="project2-desc">Site sobre carros esportivos de luxo com sistema de busca, cadastro de usuários
+              e painel administrativo.</p>
             <div class="tech-tags">
               <span>Django</span>
               <span>PostgreSQL</span>
@@ -183,8 +202,9 @@
           </div>
 
           <div class="projeto-card">
-            <h3>Site Institucional - Tatuador</h3>
-            <p>Site institucional desenvolvido para um renomado tatuador realista de São Paulo, com foco em performance,
+            <h3 data-i18n="project3-title">Site Institucional - Tatuador</h3>
+            <p data-i18n="project3-desc">Site institucional desenvolvido para um renomado tatuador realista de São
+              Paulo, com foco em performance,
               SEO e portfólio visual.</p>
             <div class="tech-tags">
               <span>React</span>
@@ -200,11 +220,12 @@
 
     <section id="contato" class="contato">
       <div class="container">
-        <h2>Contato</h2>
+        <h2 data-i18n="contact-title">Contato</h2>
         <div class="contato-content">
           <div class="contato-info">
-            <h3>Vamos conversar?</h3>
-            <p>Quer criar um site profissional ou melhorar sua presença online? Fale comigo e vamos conversar sobre o
+            <h3 data-i18n="contact-subtitle">Vamos conversar?</h3>
+            <p data-i18n="contact-description">Quer criar um site profissional ou melhorar sua presença online? Fale
+              comigo e vamos conversar sobre o
               seu projeto.</p>
 
             <div class="contato-links">
@@ -247,8 +268,8 @@
       <div class="container">
         <div class="frase-content">
           <div class="frase-info">
-            <span>Frases Nerd</span>
-            <small>Referências de filmes, séries e cultura geek</small>
+            <span data-i18n="frase-nerd">Frases Nerd</span>
+            <small data-i18n="frase-subtitle">Referências de filmes, séries e cultura geek</small>
           </div>
           <p id="dynamic-text"></p>
         </div>
@@ -257,7 +278,7 @@
   </main>
 
   <footer>
-    <p>Desenvolvido por Renan Fumis ©2025</p>
+    <p data-i18n="footer-text">Desenvolvido por Renan Fumis ©2025</p>
   </footer>
 
   <script src="/script/script.js"></script>

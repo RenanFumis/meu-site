@@ -380,6 +380,20 @@ nav a:hover::after {
   margin: 0 auto;
   opacity: 0.8;
   color: #b0b0b0;
+  position: relative;
+}
+
+.hero-description.typing {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .hero-description.typing {
+    white-space: normal;
+    word-wrap: break-word;
+  }
 }
 
 /* Seções gerais */

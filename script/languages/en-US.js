@@ -10,7 +10,7 @@ window.translations = {
   "hero-title": "Renan Fumis",
   "hero-subtitle": "Web Developer",
   "hero-description":
-    "Transforming ideas into unique digital experiences. Specialized in frontend development and creating modern, responsive interfaces.",
+    "Transforming ideas into code, creating innovative solutions for the web",
   "hero-cta": "View My Projects",
 
   // About

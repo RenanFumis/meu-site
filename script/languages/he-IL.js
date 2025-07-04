@@ -9,8 +9,7 @@ window.translations = {
   // Hero Section
   "hero-title": "מאיר פומיס",
   "hero-subtitle": "מפתח אתרים",
-  "hero-description":
-    "הופך רעיונות לחוויות דיגיטליות ייחודיות. מתמחה בפיתוח frontend ויצירת ממשקים מודרניים ורספונסיביים.",
+  "hero-description": "הופך רעיונות לקוד, יוצר פתרונות חדשניים",
   "hero-cta": "צפה בפרויקטים שלי",
 
   // About

@@ -10,7 +10,7 @@ window.translations = {
   "hero-title": "Renan Fumis",
   "hero-subtitle": "Desenvolvedor Web",
   "hero-description":
-    "Transformando ideias em experiências digitais únicas. Especializado em desenvolvimento frontend e criação de interfaces modernas e responsivas.",
+    "Transformando ideias em código, criando soluções inovadoras para web",
   "hero-cta": "Conheça Meus Projetos",
 
   // Sobre

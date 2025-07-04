@@ -23,12 +23,43 @@ function updateContent() {
   elements.forEach((element) => {
     const key = element.getAttribute("data-i18n");
     if (translations[key]) {
-      element.textContent = translations[key];
+      // Se for o hero-description, aplicar efeito de digitação
+      if (element.classList.contains("hero-description")) {
+        applyTypewriterEffect(element, translations[key]);
+      } else {
+        element.textContent = translations[key];
+      }
     }
   });
 
   // Atualizar frase dinâmica
   exibirFraseAleatoria();
+}
+
+// Função para aplicar efeito de digitação
+function applyTypewriterEffect(element, text) {
+  element.classList.add("typing");
+  element.innerHTML = "";
+
+  let i = 0;
+  // Velocidade adaptativa baseada no tamanho da tela
+  const isMobile = window.innerWidth <= 768;
+  const speed = isMobile ? 80 : 60; // mais lento no mobile para melhor legibilidade
+
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      // Remover a classe typing quando terminar
+      setTimeout(() => {
+        element.classList.remove("typing");
+      }, 1000);
+    }
+  }
+
+  type();
 }
 
 // Função para atualizar o botão de idioma

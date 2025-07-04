@@ -5,8 +5,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 
 ## 📋 Sobre o Projeto
 
@@ -16,7 +15,11 @@ Site pessoal desenvolvido para apresentar o portfólio e habilidades de Renan Fu
 
 - ✅ **Design Responsivo** - Funciona perfeitamente em todos os dispositivos
 - ✅ **Tema Escuro Moderno** - Interface elegante com cores creme (#F7F8E5)
-- ✅ **Menu Hambúrguer** - Navegação mobile otimizada
+- ✅ **Menu Hambúrguer** - Navegação mobile otimizada com fechamento automático
+- ✅ **Sistema Multilíngue** - Suporte para Português, Inglês e Hebraico
+- ✅ **Efeito de Digitação** - Animação typewriter no hero section
+- ✅ **Botão WhatsApp Flutuante** - Contato rápido e acessível
+- ✅ **Scroll Suave** - Navegação fluida entre seções
 - ✅ **SEO Otimizado** - Meta tags, sitemap e structured data
 - ✅ **Performance** - Carregamento rápido e otimizado
 - ✅ **Acessibilidade** - Seguindo padrões WCAG
@@ -29,6 +32,8 @@ Site pessoal desenvolvido para apresentar o portfólio e habilidades de Renan Fu
 - **CSS3** - Estilização moderna com Grid e Flexbox
 - **JavaScript** - Interatividade e animações
 - **Responsive Design** - Mobile-first approach
+- **Sistema Multilíngue** - Suporte para 3 idiomas
+- **Animações CSS** - Efeitos suaves e modernos
 
 ### SEO & Performance
 - **Meta Tags** - Otimização para motores de busca
@@ -47,16 +52,25 @@ Site pessoal desenvolvido para apresentar o portfólio e habilidades de Renan Fu
 
 ```
 site-renan/
-├── index.html          # Página principal
-├── style.css           # Estilos CSS
-├── script.js           # JavaScript
-├── robots.txt          # Configuração para crawlers
-├── sitemap.xml         # Mapa do site
-├── .htaccess           # Configurações do servidor
-├── manifest.json       # PWA manifest
-├── README.md           # Este arquivo
-└── img/
-    └── eucartoon.jpeg  # Imagem do perfil
+├── index.html              # Página principal
+├── Style/
+│   └── style.css          # Estilos CSS organizados
+├── script/
+│   ├── script.js          # JavaScript principal
+│   └── languages/         # Sistema de traduções
+│       ├── pt-BR.js       # Português Brasileiro
+│       ├── en-US.js       # Inglês Americano
+│       └── he-IL.js       # Hebraico Israelense
+├── img/                   # Imagens do projeto
+│   ├── devmeir-logo.png
+│   ├── eucartoon.jpeg
+│   └── teste2-corte.png
+├── robots.txt             # Configuração para crawlers
+├── sitemap.xml            # Mapa do site
+├── .htaccess              # Configurações do servidor
+├── manifest.json          # PWA manifest
+├── .gitignore             # Arquivos ignorados pelo Git
+└── README.md              # Este arquivo
 ```
 
 ## 🎨 Design System
@@ -94,19 +108,27 @@ O site é totalmente responsivo com breakpoints:
 git clone https://github.com/renanfumis/site-renan.git
 ```
 
-2. **Faça upload dos arquivos**
+2. **Configure o ambiente**
 ```bash
-# Upload via FTP ou SSH para o servidor
+# O projeto não requer dependências externas
+# Todos os arquivos estão prontos para deploy
 ```
 
-3. **Configure o domínio**
+3. **Faça upload dos arquivos**
+```bash
+# Upload via FTP ou SSH para o servidor
+# Mantenha a estrutura de pastas intacta
+```
+
+4. **Configure o domínio**
 - Aponte o domínio para o diretório do projeto
 - Certifique-se que o SSL está ativo
 
-4. **Verifique as configurações**
+5. **Verifique as configurações**
 - Teste o HTTPS
 - Verifique o www
 - Teste a responsividade
+- Teste o sistema multilíngue
 
 ## 🎯 SEO Otimizado
 
@@ -168,16 +190,13 @@ git clone https://github.com/renanfumis/site-renan.git
 
 **Renan Fumis**
 - 📧 Email: devmeir.il@gmail.com
+- 📱 WhatsApp: +55 11 98189-5187
 - 💼 LinkedIn: [linkedin.com/in/renanfumis](https://linkedin.com/in/renanfumis)
 - 🐙 GitHub: [github.com/renanfumis](https://github.com/renanfumis)
 - 🌐 Site: [www.devmeir.com.br](https://www.devmeir.com.br)
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ---
 
-**Desenvolvido com ❤️ por Renan Fumis**
+**Desenvolvido por Renan Fumis**
 
-*Última atualização: Janeiro 2025* 
+*Última atualização: Julho 2025*

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.devmeir.com.br/sitemap.xml
+
+# Otimizações para SEO
+Disallow: /admin/
+Disallow: /private/
+
+# Permitir indexação de todos os recursos importantes
+Allow: /img/
+Allow: /css/
+Allow: /js/ 

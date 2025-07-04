@@ -98,6 +98,14 @@ document.addEventListener("DOMContentLoaded", function () {
       option.addEventListener("click", function () {
         const lang = this.getAttribute("data-lang");
         loadLanguage(lang);
+
+        // Fechar menu hamburguer no mobile após selecionar idioma
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        if (hamburger && navMenu && window.innerWidth <= 768) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
       });
     });
 });
@@ -178,10 +186,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
-        targetElement.scrollIntoView({
+        // Calcular offset para compensar o header fixo
+        const headerHeight = document.querySelector("header").offsetHeight;
+        const targetPosition = targetElement.offsetTop - headerHeight - 20; // 20px de margem extra
+
+        window.scrollTo({
+          top: targetPosition,
           behavior: "smooth",
-          block: "start",
         });
+      }
+
+      // Fechar menu hamburguer no mobile após clicar em qualquer link
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      if (hamburger && navMenu && window.innerWidth <= 768) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
       }
     });
   });

@@ -36,30 +36,66 @@ function updateContent() {
   exibirFraseAleatoria();
 }
 
+// Variáveis globais para controlar a animação
+let typewriterTimeout = null;
+let isTypewriterActive = false;
+
 // Função para aplicar efeito de digitação
 function applyTypewriterEffect(element, text) {
-  element.classList.add("typing");
-  element.innerHTML = "";
-
-  let i = 0;
-  // Velocidade adaptativa baseada no tamanho da tela
-  const isMobile = window.innerWidth <= 768;
-  const speed = isMobile ? 80 : 60; // mais lento no mobile para melhor legibilidade
-
-  function type() {
-    if (i < text.length) {
-      element.innerHTML += text.charAt(i);
-      i++;
-      setTimeout(type, speed);
-    } else {
-      // Remover a classe typing quando terminar
-      setTimeout(() => {
-        element.classList.remove("typing");
-      }, 1000);
-    }
+  // Cancelar animação anterior se existir
+  if (typewriterTimeout) {
+    clearTimeout(typewriterTimeout);
+    typewriterTimeout = null;
   }
 
-  type();
+  // Resetar estado ativo para permitir nova animação
+  isTypewriterActive = false;
+
+  // Limpar o elemento e remover classe typing
+  element.innerHTML = "";
+  element.classList.remove("typing");
+
+  // Pequeno delay para garantir que a limpeza foi aplicada
+  setTimeout(() => {
+    isTypewriterActive = true;
+    element.classList.add("typing");
+
+    let i = 0;
+    // Velocidade adaptativa baseada no tamanho da tela
+    const isMobile = window.innerWidth <= 768;
+    const speed = isMobile ? 80 : 60; // mais lento no mobile para melhor legibilidade
+
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        typewriterTimeout = setTimeout(type, speed);
+      } else {
+        // Remover a classe typing quando terminar
+        typewriterTimeout = setTimeout(() => {
+          element.classList.remove("typing");
+          typewriterTimeout = null;
+          isTypewriterActive = false;
+        }, 1000);
+      }
+    }
+
+    type();
+  }, 50);
+}
+
+// Função para resetar o estado da animação (caso necessário)
+function resetTypewriterState() {
+  if (typewriterTimeout) {
+    clearTimeout(typewriterTimeout);
+    typewriterTimeout = null;
+  }
+  isTypewriterActive = false;
+
+  const heroDescription = document.querySelector(".hero-description");
+  if (heroDescription) {
+    heroDescription.classList.remove("typing");
+  }
 }
 
 // Função para atualizar o botão de idioma
@@ -235,6 +271,22 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach((section) => {
     observer.observe(section);
   });
+
+  // Aplicar fade-in na seção hero imediatamente
+  const hero = document.querySelector(".hero");
+  if (hero) {
+    setTimeout(() => {
+      hero.classList.add("fade-in");
+    }, 100);
+  }
+
+  // Aplicar fade-in na frase dinâmica
+  const fraseDinamica = document.querySelector(".frase-dinamica");
+  if (fraseDinamica) {
+    setTimeout(() => {
+      fraseDinamica.classList.add("fade-in");
+    }, 200);
+  }
 
   // Exibir frase aleatória na seção dinâmica
   exibirFraseAleatoria();

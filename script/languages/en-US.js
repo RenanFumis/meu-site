@@ -61,7 +61,7 @@ window.translations = {
   "frase-subtitle": "Movie, series and geek culture references",
 
   // Footer
-  "footer-text": "© 2024 Renan Fumis. All rights reserved.",
+  "footer-text": "Developed by Renan Fumis ©2025",
 
   // Language Button
   "lang-button": "EN-US",

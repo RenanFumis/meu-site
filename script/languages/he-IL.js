@@ -60,7 +60,7 @@ window.translations = {
   "frase-subtitle": "התייחסויות לסרטים, סדרות ותרבות גיק",
 
   // Footer
-  "footer-text": "© 2024 מאיר פומיס. כל הזכויות שמורות.",
+  "footer-text": "פותח על ידי מאיר פומיס ©2025",
 
   // Language Button
   "lang-button": "HE-IL",

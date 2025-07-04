@@ -54,7 +54,7 @@ window.translations = {
   "contact-title": "Contact",
   "contact-subtitle": "Let's talk?",
   "contact-description":
-    "Want to create a professional website or improve your online presence? Talk to me and let's discuss your project.",
+    "Do you want to create a professional website or improve your online presence? Talk to me and let's discuss your project.",
 
   // Dynamic Phrases
   "frase-nerd": "Nerd Quotes",

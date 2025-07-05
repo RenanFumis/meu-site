@@ -569,7 +569,7 @@ section.fade-in .projetos-grid {
   padding: 2rem;
   border-radius: 10px;
   border-left: 4px solid #F7F8E5;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 25px rgba(0,0,0,0.5);
   opacity: 0;
   transform: translateY(30px);
@@ -578,6 +578,7 @@ section.fade-in .projetos-grid {
 section.fade-in .projeto-card {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 /* Delay escalonado para os cards de projetos */

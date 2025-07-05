@@ -42,13 +42,13 @@ window.translations = {
   "projects-view": "View Project",
   "project1-title": "File Converter",
   "project1-desc":
-    "Desktop software that converts files to PDF and TIFF with a graphical interface built in Flet Python.",
-  "project2-title": "PrimeRodas",
+    "Desktop software with a graphical interface developed using Flet Python, designed to convert files into PDF and TIFF formats in a practical and efficient way. It specifically meets the needs of notary offices, which require standardized document formats to carry out their procedures. The solution has streamlined the team's document conversion process, enabling the company to serve more clients and increase its productivity in the legal and documentation sector.",
+  "project2-title": "Institutional Website – CPZ",
   "project2-desc":
-    "Website about luxury sports cars with search system, user registration, and admin panel.",
+    "Institutional website developed for a high-end custom furniture company that collaborates with European designers. The project showcases the brand's identity, key projects, and featured professionals, with an elegant layout and intuitive navigation. It also includes a PHP contact form for lead capture, enabling newsletter distribution and follow-up by the sales team.",
   "project3-title": "Institutional Website - Tattoo Artist",
   "project3-desc":
-    "Institutional website developed for a renowned realistic tattoo artist from São Paulo, focused on performance, SEO, and visual portfolio.",
+    "Institutional website project created for one of the most renowned names in realistic tattooing in São Paulo. With a studio located in Diadema-SP and international presence in four other countries, the site was developed with a focus on optimized performance, SEO strategies, and a striking visual portfolio. The platform highlights the client’s artistic work and helps attract new followers and potential clients worldwide.",
 
   // Contact
   "contact-title": "Contact",
